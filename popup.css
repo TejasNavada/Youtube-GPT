@@ -26,8 +26,16 @@ main > :last-child {
   background-color: white;
 }
 
+.form-container .api {
+  width: 80%;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  max-height: 15px;
+}
+
 /* Full-width textarea */
-.form-container textarea {
+.form-container .txtarea {
   width: 90%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -36,6 +44,7 @@ main > :last-child {
   resize: none;
   min-height: 200px;
 }
+
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
