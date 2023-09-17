@@ -13,7 +13,8 @@ To use this Chrome extension, please follow these simple steps:
 3. **Install the Extension**:
    - Open Google Chrome.
    - In a new tab, type `chrome://extensions` in the address bar and press Enter.
-
+ 
+![load extension](Images/extensionpage.png)
 4. **Load Unpacked Extension**:
    - Make sure you have enabled "Developer mode" in the top-right corner of the extensions page.
    - Click on the "Load unpacked" button.
@@ -25,5 +26,5 @@ To use this Chrome extension, please follow these simple steps:
    - Click the toggle switch next to the extension's name to enable it.
 
 You have successfully installed the Chrome extension! You can now start using it.
-
+![load extension](Images/gpt.JPG)
 If you encounter any issues or have questions, please refer to the extension's documentation or contact the developer for support.
