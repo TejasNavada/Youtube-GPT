@@ -9,10 +9,11 @@
     <div class="chat-popup" id="myForm">
       <form  class="form-container">
         <h1>Youtube-GPT</h1>
-
+        <textarea id ="api key" placeholder="Open Ai API KEY" name="key" class = "api" ></textarea>
+        <button id = "apibtn" type="button" >Enter</button>
         <label for="msg"><b>Question</b></label>
-        <textarea id ="question" placeholder="Type question.." name="msg" required></textarea>
-        <textarea id ="response" placeholder="Response" name="rsp" readonly></textarea>
+        <textarea id ="question" placeholder="Type question.." name="msg" class="txtarea" ></textarea>
+        <textarea id ="response" placeholder="Response" name="rsp" class="txtarea" readonly></textarea>
         <button id = "btn" type="button" class="btn">Send</button>
       </form>
     </div>
