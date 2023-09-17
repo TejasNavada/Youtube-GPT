@@ -1,0 +1,62 @@
+body > .scaffold > :is(top-nav, navigation-rail, side-nav, footer),
+main > :not(:last-child),
+main > :last-child > navigation-tree,
+main .toc-container {
+  display: none;
+}
+
+main > :last-child {
+  margin-top: min(10vmax, 10rem);
+  margin-bottom: min(10vmax, 10rem);
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  min-width: 300px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}

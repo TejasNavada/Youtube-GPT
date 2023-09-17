@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Youtube-GPT</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="chat-popup" id="myForm">
+      <form  class="form-container">
+        <h1>Youtube-GPT</h1>
+
+        <label for="msg"><b>Question</b></label>
+        <textarea id ="question" placeholder="Type question.." name="msg" required></textarea>
+        <textarea id ="response" placeholder="Response" name="rsp" readonly></textarea>
+        <button id = "btn" type="button" class="btn">Send</button>
+      </form>
+    </div>
+
+    <script src="popup.js"></script>
+
+    
+  </body>
+</html>

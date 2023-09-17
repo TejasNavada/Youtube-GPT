@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube-GPT",
+  "version": "0.1.0",
+  "description": "My Chrome Extension",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Gpt Tube",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "identity",
+    "identity.email",
+    "nativeMessaging"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"],
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "run_at": "document_idle",
+      "js": ["contentScriptIso.js"],
+      "world": "ISOLATED"
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}
